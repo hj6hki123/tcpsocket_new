@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#B9EABA"
+
+    tools:context="com.example.myapplication.login_Activity">
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="166dp"
+        android:layout_height="81dp"
+        android:layout_marginBottom="4dp"
+        android:text="智慧插座"
+        android:layout_marginLeft="100dp"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextEmailAddress"
+        tools:layout_editor_absoluteX="122dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="60dp">
+
+        <TextView
+            android:id="@+id/textView_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="12dp"
+            android:text="帳號"
+            android:textSize="15dp"
+            app:layout_constraintEnd_toStartOf="@+id/editTextTextEmailAddress"
+            tools:layout_editor_absoluteY="247dp" />
+
+        <EditText
+            android:id="@+id/editTextTextUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            app:layout_constraintBottom_toTopOf="@+id/editTextTextPassword"
+            tools:layout_editor_absoluteX="100dp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="60dp">
+        <TextView
+            android:id="@+id/textView_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="12dp"
+            android:text="密碼"
+            android:textSize="15dp"
+            app:layout_constraintEnd_toStartOf="@+id/editTextTextPassword"
+            tools:layout_editor_absoluteY="313dp"
+            />
+        <EditText
+            android:id="@+id/editTextTextPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPassword"
+            tools:layout_editor_absoluteX="100dp"
+            tools:layout_editor_absoluteY="300dp" />
+    </LinearLayout>
+
+
+
+
+    <Button
+        android:id="@+id/button2"
+        style="@android:style/Animation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editTextTextPassword"
+        android:layout_marginLeft="150dp"
+        android:text="登入"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword"
+        tools:layout_editor_absoluteX="161dp"
+        android:onClick="ToMainactivity"/>
+
+    <TextView
+        android:id="@+id/autolink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="155dp"
+        android:text="@string/web_reg"
+        android:textSize="8pt"
+
+        />
+</LinearLayout>

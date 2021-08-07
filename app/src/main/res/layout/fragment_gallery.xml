@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.gallery.GalleryFragment"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="更改名字"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="20dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="112dp"
+            android:layout_height="match_parent"
+            android:text="電表1:"
+            android:textSize="20dp" />
+        <EditText
+            android:id="@+id/USER"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text=""
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="電表2:"
+            android:textSize="20dp"
+            />
+        <EditText
+            android:id="@+id/PASSWORD"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            />
+    </LinearLayout>
+    <Button
+        android:id="@+id/login"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="確定"
+        style="@android:style/Widget.DeviceDefault.Button.Toggle"
+
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="設定連線位置"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="20dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="ADDR:"
+            android:textSize="20dp"
+            />
+        <EditText
+            android:id="@+id/ADDR"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="120.114.67.238"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="PORT:"
+            android:textSize="20dp"/>
+        <EditText
+            android:id="@+id/PORT"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="9997"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/setfin"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="設定完成"
+        style="@android:style/Widget.DeviceDefault.Button.Toggle"
+
+        />
+
+</LinearLayout>

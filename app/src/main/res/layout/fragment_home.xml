@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:gauge="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.home.HomeFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="-26dp"
+        tools:layout_editor_absoluteY="194dp">
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="76dp"
+            android:layout_toStartOf="@+id/volt"
+            android:background="@drawable/spinner_back"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/inputs"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:text="TCP CLIENT"
+            android:textSize="11pt" />
+
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/inputs"
+            android:layout_marginStart="4dp"
+            android:layout_marginBottom="-39dp"
+            android:layout_toEndOf="@+id/gauge_view"
+            android:textSize="13pt"
+            android:gravity="center"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/volt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/inputs"
+            android:layout_marginStart="1dp"
+            android:layout_marginBottom="-81dp"
+            android:layout_toEndOf="@+id/gauge_view"
+            android:text="電壓:"
+            android:textSize="10pt" />
+
+
+        <TextView
+            android:id="@+id/curren1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/inputs"
+            android:layout_marginStart="1dp"
+            android:layout_marginBottom="-124dp"
+            android:layout_toEndOf="@+id/gauge_view"
+            android:text="電流:"
+            android:textSize="10pt" />
+        <TextView
+            android:id="@+id/power1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/inputs"
+            android:layout_marginStart="1dp"
+            android:layout_marginBottom="-167dp"
+            android:layout_toEndOf="@+id/gauge_view"
+            android:text="功率:"
+            android:textSize="10pt" />
+        <TextView
+            android:id="@+id/frenq"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/inputs"
+            android:layout_marginStart="1dp"
+            android:layout_marginBottom="-210dp"
+            android:layout_toEndOf="@+id/gauge_view"
+            android:text="頻率:"
+            android:textSize="10pt" />
+        <TextView
+            android:id="@+id/pf1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/inputs"
+            android:layout_marginStart="1dp"
+            android:layout_marginBottom="-253dp"
+            android:layout_toEndOf="@+id/gauge_view"
+            android:text="功率因數:"
+            android:textSize="10pt" />
+        <TextView
+            android:id="@+id/kwh1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/inputs"
+            android:layout_marginStart="1dp"
+            android:layout_marginBottom="-296dp"
+            android:layout_toEndOf="@+id/gauge_view"
+            android:text="千瓦·時:"
+            android:textSize="10pt" />
+
+
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/inputs"
+            android:layout_marginStart="4dp"
+            android:layout_marginBottom="-377dp"
+            android:layout_toEndOf="@+id/gauge_view2"
+            android:textSize="13pt"
+            android:gravity="center"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/volt2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/inputs"
+            android:layout_marginStart="1dp"
+            android:layout_marginBottom="-420dp"
+            android:layout_toEndOf="@+id/gauge_view2"
+            android:text="電壓:"
+            android:textSize="10pt" />
+
+
+        <TextView
+            android:id="@+id/curren2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/inputs"
+            android:layout_marginStart="1dp"
+            android:layout_marginBottom="-467dp"
+            android:layout_toEndOf="@+id/gauge_view2"
+            android:text="電流:"
+            android:textSize="10pt" />
+        <TextView
+            android:id="@+id/power2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/inputs"
+            android:layout_marginStart="1dp"
+            android:layout_marginBottom="-510dp"
+            android:layout_toEndOf="@+id/gauge_view2"
+            android:text="功率:"
+            android:textSize="10pt" />
+        <TextView
+            android:id="@+id/frenq2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/inputs"
+            android:layout_marginStart="1dp"
+            android:layout_marginBottom="-553dp"
+            android:layout_toEndOf="@+id/gauge_view2"
+            android:text="頻率:"
+            android:textSize="10pt" />
+        <TextView
+            android:id="@+id/pf2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/inputs"
+            android:layout_marginStart="1dp"
+            android:layout_marginBottom="-597dp"
+            android:layout_toEndOf="@+id/gauge_view2"
+            android:text="功率因數:"
+            android:textSize="10pt" />
+        <TextView
+            android:id="@+id/kwh2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/inputs"
+            android:layout_marginStart="1dp"
+            android:layout_marginBottom="-640dp"
+            android:layout_toEndOf="@+id/gauge_view2"
+            android:text="千瓦·時:"
+            android:textSize="10pt" />
+
+
+
+
+        <com.ntt.customgaugeview.library.GaugeView
+            android:id="@+id/gauge_view"
+            android:layout_width="173dp"
+            android:layout_height="363dp"
+            android:layout_below="@+id/inputs"
+            android:layout_marginTop="-1dp"
+            android:layout_weight="1"
+            gauge:divisions="8"
+            gauge:rangeValues="@array/VoltageValues"
+            gauge:scaleEndValue="40"
+            gauge:showInnerRim="false"
+            gauge:showNeedle="true"
+            gauge:showOuterBorder="false"
+            gauge:showOuterRim="true"
+            gauge:showOuterShadow="false"
+            gauge:showRangeText="true"
+            gauge:showRanges="true"
+            gauge:showScale="true"
+            gauge:subdivisions="1"
+            gauge:textUnit="kW"
+            gauge:textUnitSize="0.06"
+            gauge:textValueSize="0.15" />
+
+        <com.ntt.customgaugeview.library.GaugeView
+            android:id="@+id/gauge_view_back"
+            android:layout_width="173dp"
+            android:layout_height="363dp"
+            android:layout_below="@+id/inputs"
+            android:layout_marginTop="-5dp"
+            android:layout_weight="1"
+            gauge:divisions="8"
+            gauge:rangeValues="@array/CurrentValues"
+            gauge:scaleEndValue="40"
+            gauge:showInnerRim="false"
+            gauge:showNeedle="true"
+            gauge:showOuterBorder="false"
+            gauge:showOuterRim="true"
+            gauge:showOuterShadow="false"
+            gauge:showRangeText="true"
+            gauge:showRanges="true"
+            gauge:showScale="true"
+            gauge:subdivisions="1"
+            gauge:textUnit="kW"
+            gauge:textUnitSize="0.06"
+            gauge:textValueSize="0.15" />
+
+        <com.ntt.customgaugeview.library.GaugeView
+            android:id="@+id/gauge_view2"
+            android:layout_width="173dp"
+            android:layout_height="363dp"
+            android:layout_below="@+id/gauge_view"
+            android:layout_marginTop="1dp"
+            android:layout_weight="1"
+            gauge:divisions="8"
+            gauge:rangeValues="@array/VoltageValues"
+            gauge:scaleEndValue="40"
+            gauge:showInnerRim="false"
+            gauge:showNeedle="true"
+            gauge:showOuterBorder="false"
+            gauge:showOuterRim="true"
+            gauge:showOuterShadow="false"
+            gauge:showRangeText="true"
+            gauge:showRanges="true"
+            gauge:showScale="true"
+            gauge:subdivisions="1"
+            gauge:textUnit="A"
+            gauge:textUnitSize="0.06"
+            gauge:textValueSize="0.15" />
+        <com.ntt.customgaugeview.library.GaugeView
+            android:id="@+id/gauge_view2_back"
+            android:layout_width="173dp"
+            android:layout_height="363dp"
+            android:layout_below="@+id/gauge_view"
+            android:layout_marginTop="1dp"
+            android:layout_weight="1"
+            gauge:divisions="8"
+            gauge:rangeValues="@array/CurrentValues"
+            gauge:scaleEndValue="40"
+            gauge:showInnerRim="false"
+            gauge:showNeedle="true"
+            gauge:showOuterBorder="false"
+            gauge:showOuterRim="true"
+            gauge:showOuterShadow="false"
+            gauge:showRangeText="true"
+            gauge:showRanges="true"
+            gauge:showScale="true"
+            gauge:subdivisions="1"
+            gauge:textUnit="A"
+            gauge:textUnitSize="0.06"
+            gauge:textValueSize="0.15" />
+
+        <ToggleButton
+            android:id="@+id/toggleButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gauge_view"
+            android:layout_alignBottom="@+id/gauge_view"
+            android:layout_marginTop="237dp"
+            android:layout_marginEnd="42dp"
+            android:layout_marginBottom="-282dp"
+            android:layout_toStartOf="@+id/kwh2"
+            android:textOn="電流"
+            android:textOff="電壓"
+
+            />
+
+        <ToggleButton
+            android:id="@+id/toggleButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/gauge_view"
+            android:layout_marginEnd="45dp"
+            android:layout_marginBottom="69dp"
+            android:layout_toStartOf="@+id/kwh1"
+            android:textOn="電流"
+            android:textOff="電壓"
+            />
+
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
